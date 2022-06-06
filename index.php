@@ -76,6 +76,7 @@ function function_alert($message)
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2? família=Poppins:wght@200;400;500;700&display=swap" rel="stylesheet">
+    
     <title>Ponto Turistico</title>
     <style>
         * {
@@ -154,18 +155,17 @@ function function_alert($message)
         }
 
         /* Tabela */
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
         table {
             margin-top: 40px;
             font-size: 20px;
             border-collapse: collapse;
         }
 
-        h2 {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .s-tabela {
+        .tabela{
             display: flex;
             align-items: center;
             justify-content: center;
@@ -200,16 +200,15 @@ function function_alert($message)
             <input type="radio" id="cep" name="tipobusca" value="1">
             <label for="cep">CEP</label>
 
-
             <input type="text" class="s-input" name="buscar" placeholder="Pesquise um local">
             <button type="submit" name="pesquisar" id="pesquisar" value="pesquisar">Pesquisar</button>
         </div>
 
         <!-- TABELA FORMULARIO -->
     </form>
-    <div hidden id="Tabela" name="Tabela">
-        <h2>Locais Localizados</h2><br>
-        <div class="s-tabela">
+    <h2>Locais Localizados</h2><br>
+    <div class="tabela"  hidden id="Tabela" name="Tabela">
+        <div class="s-tabela" >
             <table class="tabela" border=1>
                 <tr>
                     <td>Nome</td>
